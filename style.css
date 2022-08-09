@@ -1,0 +1,227 @@
+* {
+    margin: 0%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 1fr;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1fr;
+}
+
+#heading {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.15fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#logohead {
+    display: flex;
+    align-items: center;
+}
+
+#jem {
+    color: #0099FF;
+    font-size: 50px;
+}
+
+.headerhead {
+    display: flex;
+    align-items: center;
+}
+
+.btn1 {
+    width: 100px;
+    border: 2px solid #0099FF;
+    background-color: black;
+    color: #0099FF;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#logoimg {
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+#aboutus {
+    width: 100%;
+    height: 100%;
+}
+
+#services {
+    width: 100%;
+    height: 100%;
+}
+
+#contactus {
+    width: 100%;
+    height: 100%;
+}
+
+#submain {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#content1 {
+    font-size: 45px;
+    margin-bottom: 8px;
+}
+
+#content4 {
+    margin-left: 15px;
+}
+
+#design {
+    width: 100%;
+    height: 100%;
+}
+
+#designimg {
+    width: 100%;
+    height: 100%;
+}
+
+#ourpro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+#package {
+    width: 75%;
+    height: 700px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-gap: 25px;
+}
+
+#pack1 {
+    height: 700px;
+    grid-column: 1/2;
+}
+
+#pack2 {
+    height: 700px;
+    grid-column: 2/3;
+}
+
+#pack3 {
+    height: 700px;
+    grid-column: 3/4;
+}
+
+.packtype {
+    height: 100px;
+    background-color: black;
+    color: #0099FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.packcontent {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.packs {
+    background-color: navy;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#service {
+    width: 75%;
+    height: 900px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.development {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.servicepic {
+    height: 240px;
+    width: 440px;
+}
+
+.webcontent {
+    color: navy;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    width: 100%;
+    height: 700px;
+    background-image: url("contactus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+}
+
+#contacticon {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.45fr 0.45fr 0.45fr 0.45fr 0.45fr;
+}
