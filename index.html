@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7a4aae7e35.js" crossorigin="anonymous"></script>
     <title>Jemex Software House</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                    return false;
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -24,10 +39,10 @@
             </div>
             <div id="heading">
                 <div id="home" class="headerhead">
-                    <button class="btn1">Home</button></div>
-                <div id="aboutus" class="headerhead"><button class="btn1">Services</button></div>
-                <div id="services" class="headerhead"><button class="btn1">Packages</button></div>
-                <div id="contactus" class="headerhead"><button class="btn1">Contact Us</button></div>
+                    <button class="btn1"><a href="#navbar" class="scrolldiv">Home</a></button></div>
+                <div id="aboutus" class="headerhead"><button class="btn1"><a href="#ourser" class="scrolldiv">Services</a></button></div>
+                <div id="services" class="headerhead"><button class="btn1"><a href="#ourpro" class="scrolldiv">Packages</a></button></div>
+                <div id="contactus" class="headerhead"><button class="btn1"><a href="#contact" class="scrolldiv">Contact Us</a></button></div>
             </div>
         </div>
         <div id="submain">
@@ -47,7 +62,7 @@
     </div>
     <!-- main end -->
     <!-- service start -->
-    <h3 id="ourpro">Our Services</h3>
+    <h3 id="ourser">Our Services</h3>
     <div id="service">
 
         <div class="development">
@@ -149,16 +164,22 @@
     <div id="contact">
         <div id="contacticon">
             <h3>Contact Us</h3>
-            <div><i class="fa-brands fa-whatsapp"></i>&nbsp&nbsp Whatsapp
+
+            <div><i class="fa-brands fa-whatsapp"></i>&nbsp&nbsp Whatsapp<br/>+92 331-8347850
             </div>
-            <div><i class="fa-brands fa-linkedin"></i>&nbsp&nbsp Linkedin</div>
-            <div><i class="fa-brands fa-facebook"></i>&nbsp&nbsp Facebook</div>
-            <div><i class="fa-brands fa-instagram"></i>&nbsp&nbsp Instagram</div>
-            <div><i class="fa-brands fa-google"></i>&nbsp&nbsp Gmail</div>
+            <div><i class="fa-brands fa-linkedin"></i>&nbsp&nbsp Linkedin<br/><a href="https://www.linkedin.com/in/hasham-uddin-5767a7210/" class="linkscon">linkedin.com/in/hasham-uddin-5767a7210</a></div>
+            <div><i class="fa-brands fa-facebook"></i>&nbsp&nbsp Facebook<br/><a href="https://www.facebook.com/profile.php?id=100009164465054" class="linkscon">https://www.facebook.com/profile.php?id=100009164465054</a></div>
+            <div><i class="fa-brands fa-instagram"></i>&nbsp&nbsp Instagram<br/><a href="https://www.instagram.com/uddin.hasham/?hl=en" class="linkscon">https://www.instagram.com/uddin.hasham/?hl=en</a></div>
+            <div><i class="fa-brands fa-google"></i>&nbsp&nbsp Gmail<br/>hashamlaptop@gmail.com</div>
 
         </div>
         <div id="contactform">
-
+            <div class="contactdiv"><input type="text" class="inp" placeholder="First Name"></div>
+            <div class="contactdiv"><input type="text" class="inp" placeholder="Last Name"></div>
+            <div class="contactdiv"><input type="email" class="inp" placeholder="Email Address"></div>
+            <div class="contactdiv"><input type="text" class="inp" placeholder="Phone Number"></div>
+            <div class="contactdiv"><input type="text" class="inp" placeholder="Message"></div>
+            <div class="contactdiv"><button id="btn2">Submit</button></div>
         </div>
 
     </div>

@@ -120,7 +120,17 @@
     height: 100%;
 }
 
+.scrolldiv {
+    text-decoration: none;
+}
+
 #ourpro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+#ourser {
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
@@ -224,4 +234,34 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.6fr 0.45fr 0.45fr 0.45fr 0.45fr 0.45fr;
+}
+
+.linkscon {
+    color: white;
+    text-decoration: none;
+}
+
+#contactform {
+    width: 60%;
+    margin: 140px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.45fr 0.45fr 0.45fr 0.45fr 0.45fr 0.45fr;
+}
+
+.inp {
+    border: 2px solid #0099FF;
+    border-radius: 15px;
+}
+
+#btn2 {
+    border: 2px solid #0099FF;
+    border-radius: 15px;
+    width: 100px
+}
+
+.contactdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
